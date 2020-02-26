@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind" : "npx tailwindcss build ./assets/loc/css/base.css -o ./assets/prod/css/base.css"
+    "tailwind" : "npx tailwindcss build ./assets/loc/css/base.css -o ./assets/prod/css/base.css",
+    "live" : "browser-sync start --proxy 'localhost:9001' --files './assets/prod/css/*.css' './assets/prod/js/*.css' './*.php' "
   },
   "author": "",
   "license": "ISC",
