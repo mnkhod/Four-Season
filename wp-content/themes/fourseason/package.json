@@ -4,8 +4,12 @@
   "description": "local development environment for four-season website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind" : "npx tailwindcss build ./assets/loc/css/base.css -o ./assets/prod/css/base.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  }
 }
